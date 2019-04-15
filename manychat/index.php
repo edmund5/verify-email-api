@@ -19,7 +19,7 @@ $subject = 'Verify Email API for ManyChat';
 // 6 digits random number
 $_SESSION["challenge_code"] = generateRandomNumber(6); // can generate up to 255
 
-$message = $_SESSION["challenge_code"] . " is your 'Verify Email API' verification code.\n\nDon't reply to this email.";
+$message = $_SESSION["challenge_code"] . " is your 'Verify Email API' verification code. Don't reply to this email.";
 
 $headers = "From: " . $from . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
